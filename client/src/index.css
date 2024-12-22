@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: Outfit;
+}
+.placeholder-color {
+  color: #f3f1f1;
+  font-weight: 300;
 }

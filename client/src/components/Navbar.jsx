@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className='flex items-center justify-between '>
-      <Link to="/"><span className='bg-gradient-to-r from-blue-900 via-green-500 to-purple-700 bg-clip-text text-transparent font-bold lg:text-3xl sm:text-xl'>NV.</span></Link>
+      <Link to="/"><span className='bg-gradient-to-r from-blue-900 via-green-500 to-purple-700 bg-clip-text text-transparent font-bold lg:text-4xl sm:text-3xl text-4xl'>NV.</span></Link>
       <div>
         {
           user ?
