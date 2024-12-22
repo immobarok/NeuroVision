@@ -4,7 +4,7 @@ import { stepsData } from '../assets/assets'
 const Steps = () => {
   return (
     <div className='flex flex-col items-center justify-center my-32'>
-      <h1 className='py-2 text-center font-semibold text-3xl text-gray-500'>How it works</h1>
+      <h1 className='py-2 text-3xl sm:text-4xl font-semibold'>How it works</h1>
       <p className='text-center  text-gray-500 pb-5'>Transform Words Into Stunning Images</p>
       <div className='space-y-4 w-full max-w-3xl text-sm'>
         {
