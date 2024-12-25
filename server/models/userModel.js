@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -9,9 +10,13 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  password: {
+    type: String,
+    required: true,
+  },
   creditBalance: {
     type: Number,
-    dafault: 5,
+    default: 5, // Corrected typo here
   },
 });
 

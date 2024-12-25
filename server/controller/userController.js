@@ -43,4 +43,26 @@ const loginUser = async (req, res) => {
     res.json({ success: false, message: "Internal server error" });
   }
 }
-export { registerUser, loginUser };
+
+const userCredit = async (req, res) => {
+  const { userId } = req.body;
+
+  try {
+    const user = await userModel.findOne({ _id: userId });
+
+    if (!user) {
+      return res.json({ success: false, message: "User not found" });
+    }
+
+    res.json({
+      success: true,
+      credit: user.creditBalance,
+      user: { name: user.name }
+    });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+export { registerUser, loginUser, userCredit };
