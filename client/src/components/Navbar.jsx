@@ -2,12 +2,15 @@ import React, { useContext } from 'react'
 import { assets } from './../assets/assets';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
+import logo from "../assets/logo.png"
 const Navbar = () => {
   const { user, setShowLogin } = useContext(AppContext);
   const navigate = useNavigate();
   return (
     <div className='flex items-center justify-between '>
-      <Link to="/"><span className='bg-gradient-to-r from-blue-900 via-green-500 to-purple-700 bg-clip-text text-transparent font-bold lg:text-4xl sm:text-3xl text-4xl'>NV.</span></Link>
+      <Link to="/">
+      <img width={80} src={logo} alt="" />
+      </Link>
       <div>
         {
           user ?

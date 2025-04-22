@@ -33,7 +33,9 @@ const Header = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 2 }}
-      >Turn text to <span className='text-blue-600'>image</span>, in second.</motion.h1>
+      >Turn text to <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-700 bg-clip-text text-transparent">
+          image
+        </span>, in second.</motion.h1>
       <motion.p className='text-center max-w-xl mx-auto mt-5'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
