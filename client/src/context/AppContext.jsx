@@ -1,24 +1,24 @@
-import { axios } from 'axios';
+import axios from 'axios';
 import { createContext, useEffect, useState } from 'react'
-import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 export const AppContext = createContext()
 const AppContextProvider = (props) => {
-  const [user, setUser] = React.useState(null);
-  const [showLogin, setShowLogin] = React.useState(false);
+  const [user, setUser] = useState(null);
+  const [showLogin, setShowLogin] = useState(false);
   const [token, setToken] = useState(localStorage.getItem('token'));
 
   const navigate = useNavigate()
 
 
   const [credit, setCredit] = useState(false);
-  const backendUrl = import.meta.env.BACKEND_URI;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  //console.log(backendUrl) 
 
   const loadCreditsdata = async () => {
     try {
-      const { data } = await axios.get(backendUrl + 'api/user/credits', { headers: { token } })
+      const { data } = await axios.get(backendUrl + '/api/user/credits', { headers: { token } })
       if (data.success) {
         setCredit(data.credit)
         setUser(data.user)

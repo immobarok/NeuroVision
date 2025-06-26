@@ -5,10 +5,11 @@ import instagram_icon from './instagram_icon.svg'
 import twitter_icon from './twitter_icon.svg'
 import star_icon from './star_icon.svg'
 import rating_star from './rating_star.svg'
-import sample_img_1 from './sample_img_1.png'
-import sample_img_2 from './sample_img_2.png'
-import profile_img_1 from './profile_img_1.png'
-import profile_img_2 from './profile_img_2.png'
+import sample_img_1 from './main-images.jpg'
+import sample_img_2 from './main-images-2.jpg'
+import profile_img_1 from './user_1.jpg'
+import profile_img_2 from './user_2.jpg'
+import profile_img_3 from './user_3.jpg'
 import step_icon_1 from './step_icon_1.svg'
 import step_icon_2 from './step_icon_2.svg'
 import step_icon_3 from './step_icon_3.svg'
@@ -58,30 +59,30 @@ export const stepsData = [
     icon: step_icon_3,
   },
 ];
-
 export const testimonialsData = [
   {
     image: profile_img_1,
-    name: 'Donald Jackman',
-    role: 'Graphic Designer',
+    name: 'Ariana Chowdhury',
+    role: 'UI/UX Designer',
     stars: 5,
-    text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+    text: `This platform has completely transformed how I present my work. The background removal is fast, accurate, and blends perfectly with my design workflow.`,
   },
   {
     image: profile_img_2,
-    name: 'Richard Nelson',
-    role: 'Content Creator',
+    name: 'Jahidul Hasan',
+    role: 'Digital Marketer',
     stars: 5,
-    text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+    text: `As someone who handles dozens of product photos daily, It’s more and  accurate, fast, and doesn’t this tool is a lifesaver. It’s simple, intuitive, and saves me hours of editing time.`,
   },
   {
-    image: profile_img_1,
-    name: 'Donald Jackman',
-    role: ' Graphic Designer',
+    image: profile_img_3,
+    name: 'Nabila Karim',
+    role: 'E-commerce Entrepreneur',
     stars: 5,
-    text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+    text: `I use this tool for all my product images. It’s accurate, fast, and doesn’t require any technical skills. Highly recommended for small business owners!`,
   },
-]
+];
+
 
 export const plans = [
   {

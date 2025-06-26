@@ -2,11 +2,11 @@ import React, { useContext, useEffect, useState } from 'react'
 import { assets } from '../assets/assets';
 import { AppContext } from './../context/AppContext';
 import { motion } from 'framer-motion';
-import { axios } from 'axios';
+import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const Login = () => {
-  const [state, setState] = React.useState("Login");
+  const [state, setState] = useState("Login");
   const { setShowLogin, backendUrl, setToken, setUser } = useContext(AppContext);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -37,7 +37,7 @@ const Login = () => {
         }
       }
     } catch (error) {
-      toast.error(data.message)
+      toast.error(error.message)
     }
   }
 

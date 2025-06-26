@@ -19,7 +19,7 @@ const Header = () => {
       initial={{ opacity: 0.2, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      viewPoint={{ once: true }}
+      viewpoint={{ once: true }}
     >
       <motion.div className='text-stone-500 inline-flex border rounded-full px-6 py-2 border-neutral-500 gap-2'
         initial={{ opacity: 0.2, x: -15 }}
