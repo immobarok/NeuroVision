@@ -18,10 +18,15 @@ Neuro Vision is an AI-powered **Text-to-Image Generator** built using modern fro
 ---
 
 ## 🖼️ Screenshots
-
-| Prompt Input and Generate Button | Generated Image with Download Option |
 |----------------------------------|--------------------------------------|
-| ![Input Prompt](.[/screenshots/neuro-home.png] | ![Generated Result](./screenshots/neuro-home.png) |
+| Home Page | ![Generated Result](./screenshots/neuro-home.png) |
+| Result Page | ![Generated Result](./screenshots/neuro-generate.png) |
+| Plan Page | ![Generated Result](./screenshots/neuro-plan.png) |
+| Login | ![Generated Result](./screenshots/login_neuro.png) |
+| Generate Image | ![Generated Result](./screenshots/ai-generated-image.png) |
+| Generate Image | ![Generated Result](./screenshots/download(1).png) |
+| Generate Image | ![Generated Result](./screenshots/download.png) |
+| Generate Image | ![Generated Result](./screenshots/download(2).png) |
 
 > 💡 Place your screenshots inside a folder called `screenshots/` in the root of your project.
 
